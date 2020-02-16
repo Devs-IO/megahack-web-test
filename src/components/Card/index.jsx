@@ -10,12 +10,17 @@ const cardtypes = {
 };
 export default function Card({ type, end, limit }) {
   return (
-    <div className="card">
-      <img className="cardtype" src={cardtypes[type]} alt="visa" />
-      <img className="eye" src={eye} alt="mas olha la" />
-      <div className="cardtext">**** **** **** {end}</div>
+    <div className="card-container">
+      <div className="card">
+        <img className="cardtype" src={cardtypes[type]} alt="visa" />
+        <img className="eye" src={eye} alt="mas olha la" />
+        <div className="cardtext">**** **** **** {end}</div>
+      </div>
 
-      {/* tem R${limit} aqui */}
+      <div className="card-limit">
+        <span>tem R${limit} aqui</span>
+        {/* <progress value="80" max="100"/> */}
+      </div>
     </div>
   );
 }
