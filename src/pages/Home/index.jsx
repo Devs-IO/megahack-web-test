@@ -1,12 +1,19 @@
 import React from 'react'
 import Card from '../../components/Card'
+import './styles.css'
 
 export default function Home() {
     return (
-        <div>
+        <div className="home">
             ehnois
 
-            <Card type="visa" end="8999" limit={500}/>
+            <div className="header">
+
+            </div>
+
+            <Card type="visa" end="1238" limit={500}/>
+            <br/>
+            <Card type="master" end="4658" limit={200}/>
         </div>
     )
 }
