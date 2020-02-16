@@ -18,11 +18,11 @@ export default function Card({ type, end, limit }) {
       </div>
 
       <div className="card-limit">
-        <span>
+        <div>
           <span className="limit-text">R${limit} </span>
-          de limite
-        </span>
-        {/* <progress value="80" max="100"/> */}
+          <span>de limite</span>
+        </div>
+        
       </div>
     </div>
   );
