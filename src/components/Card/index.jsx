@@ -11,7 +11,6 @@ const cardtypes = {
 export default function Card({ type, end, limit }) {
   return (
     <div className="card">
-      {/* cartã1 {type} */}
       <img className="cardtype" src={cardtypes[type]} alt="visa" />
       <img className="eye" src={eye} alt="mas olha la" />
       <div className="cardtext">**** **** **** {end}</div>
