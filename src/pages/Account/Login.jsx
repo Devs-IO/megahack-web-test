@@ -14,6 +14,7 @@ export default function Login({history}) {
                 <Form>
                     <Field placeholder="login" name='login'/>
                     <Field placeholder="password" name='password'/>
+                    <button type="submit">lá vai</button>
                 </Form>
             </Formik>
         </div>
