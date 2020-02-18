@@ -1,10 +1,10 @@
 import React from 'react'
 import './styles.scss'
 
-export default function ProgressBar({total, current}) {
+export default function ProgressBar(props) {
     return (
         <div className="progressBar">
-            <progress value={current} max={total}/>
+            <progress {...props}/>
         </div>
     )
 }

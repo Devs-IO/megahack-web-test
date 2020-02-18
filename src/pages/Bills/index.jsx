@@ -13,7 +13,7 @@ export default function Bills() {
                     R$150
                 </div>
                 <div className="status"></div>
-                <div className="date"></div>
+                <div className="date">04 FEV</div>
             </div>
 
             {/* <Modal /> */}
