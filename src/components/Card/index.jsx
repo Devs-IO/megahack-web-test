@@ -1,4 +1,6 @@
 import React from "react";
+
+import ProgressBar from '../ProgressBar';
 import visa from "../../assets/cards/visa.png";
 import master from "../../assets/cards/mastercard.svg";
 import eye from "../../assets/icons/olho.svg";
@@ -29,7 +31,7 @@ export default function Card({ type, end, limit }) {
           <span>de limite</span>
         </div>
 
-        {/* <ProgressBar /> */}
+        <ProgressBar total={limit} current={100}/>
       </div>
     </div>
   );

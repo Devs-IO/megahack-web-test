@@ -1,0 +1,37 @@
+$background: black;
+$foreground: green;
+
+@mixin colorize() {
+    background-color: $background;
+    color: $foreground;
+}
+
+@mixin border {
+    border-radius: 5px;
+    border-style: none;
+}
+
+.progressBar {
+    progress {
+        height: 10px;
+        width: 100%;
+        border-radius: 2px;
+        @include colorize();
+        @include border();
+    }
+
+    & ::-webkit-progress-bar {
+        background-color: $background;
+        @include border();
+    }
+
+    & ::-webkit-progress-value {
+        color: $foreground;
+        @include border();
+    }
+
+    & ::-moz-progress-bar {
+        background-color: $foreground;
+        @include border();
+    }
+}
