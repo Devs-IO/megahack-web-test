@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../../components/Card";
 import "./styles.scss";
 
-export default function Home() {
+export default function Home({ history }) {
   return (
     <div className="home">
       ehnois
@@ -17,17 +17,16 @@ export default function Home() {
         <button>eye icon</button>
         {/* progress bar */}
 
-        <button>Guardar</button>
-        <button>Retirar</button>
-        <button>Pagar</button>
-        <button>Minha Carteira</button>
+        <button onClick={() => {}}>Guardar</button>
+        <button onClick={() => {}}>Retirar</button>
+        <button onClick={() => history.push("/pay")}>Pagar</button>
+        <button onClick={() => {}}>Minha Carteira</button>
       </div>
       <div className="cards-container">
         <div>Meus Cartões</div>
         <Card type="visa" end="1238" limit={500} />
         <Card type="master" end="4658" limit={200} />
       </div>
-
       <button>Depositar</button>
       <button>Pagar</button>
       <button>Despesas</button>

@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Account/Login";
 import NewAccount from "./pages/Account/New";
 import Profile from "./pages/Profile";
+import Pay from "./pages/Pay";
+import Wallet from "./pages/Wallet";
 
 export default function Routes() {
   return (
@@ -13,7 +15,8 @@ export default function Routes() {
         <Route path="/login" component={Login} />
         <Route path="/register" component={NewAccount} />
         <Route path="/profile" component={Profile} />
-
+        <Route path="/pay" component={Pay} />
+        <Route path="/wallet" component={Wallet} />
       </Switch>
     </BrowserRouter>
   );
