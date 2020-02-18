@@ -28,11 +28,6 @@
     font-weight: bold;
 }
 
-.cardlight {
-  background: white;
-  color: #1a3d3d;
-}
-
 .cardtype {
   grid-column: 1;
   grid-row: 1;
