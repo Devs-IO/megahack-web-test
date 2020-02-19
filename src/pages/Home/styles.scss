@@ -6,6 +6,96 @@
     .header {
         width: 100%;
         height: 246px;
-        background-color: rgb(237, 237, 237);
+
+        background-color: #ededed;
+        padding: 12px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h2 {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 100%;
+            flex: 1;
+        }
+
+        .foto {
+            flex: 1;
+        }
+
+    }
+
+    .saldo-container {
+        background-color: #fff;
+        padding: 12px;
+
+        .infos {
+            display: flex;
+            justify-content: space-between;
+
+            .saldo {
+                flex: 3;
+                font-size: 24pt;
+                font-weight: bold;
+            }
+        }
+
+        button {
+            height: 36px;
+            margin: 0px 5px;
+
+            border: 1px solid #347474;
+            background-color: white;
+            border-radius: 5px;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            font-size: 10px;
+            flex: 1;
+        }
+
+        .eye {
+            background-image: url('../../assets/icons/olho.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            flex-basis: 36px;
+            width: 36px;
+            height: 36px;
+        }
+    }
+
+    .buttons {
+        width: 100%;
+        display: flex;
+    }
+
+    .my-cards {
+        background-color: #85B2B2;
+        padding-left: 32px;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        padding: 12px;
+
+
+        .card-container {
+            margin-right: 20px;
+        }
+    }
+
+    .bottom-buttons {
+
+        button {
+            width: 5rem;
+            height: 5rem;
+
+            background-color: white;
+            border-radius: 4px;
+            border-style: none;
+            margin: 10px;
+        }
     }
 }

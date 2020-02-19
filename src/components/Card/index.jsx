@@ -32,9 +32,8 @@ export default function Card({ type, end, limit }) {
           <span className="limit-text">R${limit} </span>
           <span>de limite</span>
         </div>
-
-        <ProgressBar value={100} max={limit} />
       </div>
+      <ProgressBar value={100} max={limit} />
     </div>
   );
 }

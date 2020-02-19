@@ -1,7 +1,7 @@
 .card-container {
   width: 136px;
   border-radius: 10px;
-  background-color: #f2f2f2;
+  background-color: #333;
 }
 
 .card {
@@ -23,9 +23,14 @@
     padding: 0px 8px;
 }
 
-.limit-text {
-    font-size: 18px;
+.card-limit .limit-text {
+    font-size: 16px;
     font-weight: bold;
+}
+
+.card-container .progressBar {
+  width: 90%;
+  margin: 0px auto;
 }
 
 .cardtype {
